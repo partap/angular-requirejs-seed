@@ -15,36 +15,7 @@
 
   <div>Angular seed app: v<span app-version></span></div>
 
-  <script src="js/lib/require/require-1.0.8.js"></script>
-
-  <script>
-      //var _appContextPath = '${contextPath}';
-      require.config({
-          baseUrl: 'js/',
-          paths: {
-              jquery: 'libs/jquery/jquery-1.7.2.min'
-              ,order: 'libs/require/order-1.0.5'
-              , bootstrap: 'libs/bootstrap/bootstrap'
-              , underscore: 'libs/underscore/underscore'
-              , angular: 'lib/angular/angular-module'
-              , angularResource: 'libs/angular/angular-resource'
-          }
-          , priority: [
-               "angular"
-          ]
-          , urlArgs: 'v=1.0'
-      });
-      require( ["angular", "app"],
-              function( angular, core) {
-                  //This function will be called when all the dependencies
-                  //listed above are loaded. Note that this function could
-                  //be called before the page is loaded.
-                  //This callback is optional.
-
-
-              }
-      );
-  </script>
+  <script data-main="js/main" src="js/lib/require/require-1.0.8.js"></script>
 
   <!--
   <script src="js/lib/angular/angular.js"></script>
