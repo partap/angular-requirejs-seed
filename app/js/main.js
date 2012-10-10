@@ -4,7 +4,8 @@ require.config({
     bootstrap: '../lib/bootstrap/js/bootstrap',
     underscore: '../lib/underscore/underscore',
     angular: '../lib/angular/angular',
-    angularResource: '../lib/angular/angular-resource'
+    angularResource: '../lib/angular/angular-resource',
+    text: '../lib/require/text'
   }, 
   shim: {
     'angular' : {
