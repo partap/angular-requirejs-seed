@@ -3,6 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>My RequireJS AngularJS Bootstrap App</title>
+  <style type="text/css">
+    [ng-cloak], .ng-cloak { display: none; }
+  </style>
+  
+  <!-- ClickJacking Defense begin (https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet) -->
+  <style id="aCj" type="text/css">
+  body {
+      display: none !important;
+  }
+  </style>
+  <script type="text/javascript">
+  (function (win) {
+      if (win.top === win.self) {
+          var aCj = win.document.getElementById('aCj');
+
+          aCj.parentNode.removeChild(aCj);
+      } else {
+          win.top.location = win.self.location;
+      }
+  }(window));
+  </script>
+  <!-- ClickJacking Defense end -->
+  
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
